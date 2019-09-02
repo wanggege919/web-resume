@@ -18,7 +18,7 @@
             </ul>
             <div class="button-pdf animated swing infinite slow">
                 <button class="button-label ">
-                    <a href="https://wanggege919.github.io/my-resume/pdf/pdf.html" target="_blank">查看PDF</a>
+                    <a href="https://wanggege919.github.io/web-resume/pdf/pdf.html" target="_blank">查看PDF</a>
                 </button>
             </div>
         </div>

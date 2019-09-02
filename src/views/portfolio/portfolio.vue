@@ -62,7 +62,7 @@
             <li>熟悉了小程序的模板以及组件的使用</li>
             <li>学习了小程序内音乐播放前后台切换以及页面的显示和隐藏的同步</li>
           </ul>
-          <a class="one" href="https://github.com/wanggege919/vue-music">项目源码</a>
+          <a class="one" href="https://github.com/wanggege919/movieShareApplet">项目源码</a>
         </PortfolioTemplate>
       </div>
     </div>

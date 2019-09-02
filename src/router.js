@@ -16,6 +16,10 @@ export default new Router({
       redirect: '/person'
     },
     {
+      path: '/index.html',
+      redirect: '/person'
+    },
+    {
       path: '/person',
       name: 'Person',
       component: Person
