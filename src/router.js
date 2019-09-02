@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-
+import Person from './views/person/person.vue'
+import Skill from './views/skill/skill.vue'
+import Portfolio from './views/portfolio/portfolio.vue'
+import Blog from './views/blog/blog.vue'
+import Contact from './views/contact/contact.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -10,16 +13,32 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      redirect: '/person'
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/person',
+      name: 'Person',
+      component: Person
+    },
+    {
+      path: '/skill',
+      name: 'Skill',
+      component: Skill
+    },
+    {
+      path: '/portfolio',
+      name: 'Portfolio',
+      component: Portfolio
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })
