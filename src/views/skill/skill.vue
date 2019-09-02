@@ -72,6 +72,9 @@ export default {
       this.initScroll()
     }
   },
+  destroyed() {
+    $(".container").animate({ scrollTop: 0 }, 500);
+  },
   methods: {
     toggleClass () {
       $('.list-wrapper > li.even').addClass('animated bounceInUp')

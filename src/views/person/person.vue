@@ -66,6 +66,9 @@ export default {
       this.initVanillaTilt()
     }
   },
+  destroyed() {
+    $(".container").animate({ scrollTop: 0 }, 500);
+  },
   methods: {
     initScroll () {
       $('#app .container').on('scroll', e => {

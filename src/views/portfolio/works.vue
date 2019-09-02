@@ -71,5 +71,16 @@ export default {
                 background-color rgb(212, 59, 51)  
                 color #fff 
                 margin 10px 10px 0 10px
-                font-size 14px        
+                font-size 14px      
+
+@media screen and (max-width: 500px) {
+  .works-template {
+      padding 5px
+      font-size: 12px
+      overflow hidden
+      hr {
+          width 60%
+      }
+  }
+}  
 </style>

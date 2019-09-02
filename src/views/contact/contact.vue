@@ -54,6 +54,9 @@ export default {
     this.fixHeight()
     this.initVanillaTilt()
   },
+  destroyed() {
+    $(".container").animate({ scrollTop: 0 }, 500);
+  },
   methods: {
     fixHeight () {
       $('.contact .content .contact-wrapper').each((i, el) => {

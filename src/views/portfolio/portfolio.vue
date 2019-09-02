@@ -84,6 +84,9 @@ export default {
     this.init()
     this.initScroll()
   },
+  destroyed() {
+    $(".container").animate({ scrollTop: 0 }, 500);
+  },
   methods: {
     init () {
       $('.portfolio-title').addClass('animated bounceInRight')
@@ -125,5 +128,9 @@ export default {
       .portfolio-info
         width 80%
         margin-bottom 120px
+
+@media screen and (max-width: 500px) {
+  
+}
         
 </style>

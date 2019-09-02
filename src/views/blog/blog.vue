@@ -57,6 +57,9 @@ export default {
       this.initVanillaTilt()
     }
   },
+  destroyed() {
+    $(".container").animate({ scrollTop: 0 }, 500);
+  },
   methods: {
     initVanillaTilt () {
       VanillaTilt.init(document.querySelectorAll('.blogItem'), {
